@@ -29,7 +29,7 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "cursors/Big-Red-Circle.cur",
+        "cursors/Big-Red-Circle.cur"
       ],
       "matches": ["https://*/*"],
       "use_dynamic_url": true
