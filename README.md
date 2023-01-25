@@ -8,4 +8,4 @@ Shortcut: `Ctrl+<` (Control and Backquote)
 - Use it in presentations so your attendees can easily follow your presentation
 - Use it to find your cursor on big screens
 
-![Alt text](RedPointer.gif "a title")
+![Alt text](RedPointer.gif "RedPointer.gif")
