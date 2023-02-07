@@ -10,12 +10,18 @@ document.addEventListener('keydown', function(event) {
 function changePointer() {
     if (redPointerActive) {
         document.querySelectorAll('*').forEach(function(el) {
-            var cursor = chrome.runtime.getURL("cursors/Big-Red-Circle.cur").toString();
-            el.style.cursor = 'url(' + cursor +'), auto';
+            let cursor = chrome.runtime.getURL("cursors/Big-Red-Circle.cur").toString();
+            updateCursor(el, 'url(' + cursor + '), auto');
         });
     } else {
         document.querySelectorAll('*').forEach(function(el) {
-            el.style.cursor = 'auto';
+            updateCursor(el, 'auto')
         });
+    }
+}
+
+function updateCursor(el, cursorStyle) {
+    if (!el.hasAttribute("href")) {
+        el.style.cursor = cursorStyle;
     }
 }
